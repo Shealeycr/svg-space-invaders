@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Game Frame Example</title>
+        <meta name="viewport" content="width=device-width" />    
+    </head>
+    <body background="images/background.png">
+        <svg width="95vw" height="100vh" id="svgArea">
+            <image id="pod1" width="70px" height="50px" x="0" y="0" href="images/shipPod.png"/>
+            <image id="pod2" width="70px" height="50px" x="0" y="0" href="images/shipPod.png"/>
+            <image id="pod3" width="70px" height="50px" x="0" y="0" href="images/shipPod.png"/>
+            <image id="pod4" width="70px" height="50px" x="0" y="0" href="images/shipPod.png"/>
+            <image id="pod5" width="70px" height="50px" x="0" y="0" href="images/shipPod.png"/>
+            
+            <image id="player" width="70px" height="80px" x="0" y="0" href="images/playerShip.png"/>
+            Sorry, your browser does not support inline SVG.
+        </svg>
+        
+        <div id="gameOverPopup" style="position: absolute; 
+                top: 200px; left: calc(50vw - 250px); background-color: rgba(255, 255, 255, 0.8); 
+                border-radius: 20px; width: 500px; height: 250px; display: none" align="center">
+            <br>
+            <strong style="font-family: Helvetica; font-size: 50px">Game Over</strong>
+            <div id="score" style="font-family: Helvetica; font-size: 30px">Score: 0</div>
+            <div id="highScore" style="font-family: Helvetica; font-size: 30px">High Score: 290</div>
+            <br>
+            <button onclick="playAgain()" style="font-family: Helvetica; 
+                background-color: #54a6ff; border: 5px solid #54a6ff; 
+                border-radius: 5px; font-size: 30px">Play Again</button>
+        </div>
+        
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
